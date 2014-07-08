@@ -17,9 +17,9 @@ class Plugin extends PluginBase {
 public function pluginDetails() {
 
         return [
-            'name'        => 'Starter',
+            'name'        => 'Starters',
             'description' => 'Start your plugin',
-            'author'      => 'shwn sandy',
+            'author'      => 'shawn sandy',
             'icon'        => 'icon-exclamation-triangle'
         ];
 
@@ -30,7 +30,7 @@ public function pluginDetails() {
  */
 public function registerComponents() {
       return [
-        '\ManagedPixels\PluginStarter\Components\Starter' => 'pluginStarter'
+        '\ManagedPixels\Pluginstarter\Components\Starters' => 'pluginStarter'
       ];
   }
 

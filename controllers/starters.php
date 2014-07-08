@@ -2,7 +2,7 @@
 /**
  * declare you namespace
  */
-namespace ManagesPixels\StarterPlugin\Starters;
+namespace ManagesPixels\Pluginstarter\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
@@ -16,7 +16,7 @@ class Starters extends Controller
 
   public function __construct() {
     parent::__construct();
-    BackendMenu::setContext('ManagedPixels.Starterplugin', 'starters');
+    BackendMenu::setContext('ManagedPixels.Pluginstarter', 'starters');
   }
 
   public function index() {
