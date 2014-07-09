@@ -30,20 +30,20 @@ public function pluginDetails() {
  */
 public function registerComponents() {
       return [
-        '\ManagedPixels\Pluginstarter\Components\Starters' => 'pluginStarter'
+        '\ManagedPixels\Pluginstarter\Components\Starter' => 'pluginStarter'
       ];
   }
 
-  public function registerNavigation() {
-    return [
-      'blog' => [
-        'label' => 'Starters',
-        'icon' => 'icon-exclamation-triangle',
-        'url' => Backend::url('managedpixels/pluginstarter/starters'),
-        'permission' => ['managedpixels.starters.*'],
-        'order' => 500
-        ]
-      ];
-  }
+  // public function registerNavigation() {
+  //   return [
+  //     'blog' => [
+  //       'label' => 'Starters',
+  //       'icon' => 'icon-exclamation-triangle',
+  //       'url' => Backend::url('managedpixels/pluginstarter/starters'),
+  //       'permission' => ['managedpixels.starters.*'],
+  //       'order' => 500
+  //       ]
+  //     ];
+  // }
 
 }
