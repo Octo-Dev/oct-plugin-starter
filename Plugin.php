@@ -3,10 +3,11 @@
 
 namespace ManagedPixels\Pluginstarter ;
 /**
- * attach the plugin class
+ * class imports
  */
 use System\Classes\PluginBase;
 use BackendMenu;
+use Backend;
 
 class Plugin extends PluginBase {
 
@@ -34,16 +35,16 @@ public function registerComponents() {
       ];
   }
 
-  // public function registerNavigation() {
-  //   return [
-  //     'blog' => [
-  //       'label' => 'Starters',
-  //       'icon' => 'icon-exclamation-triangle',
-  //       'url' => Backend::url('managedpixels/pluginstarter/starters'),
-  //       'permission' => ['managedpixels.starters.*'],
-  //       'order' => 500
-  //       ]
-  //     ];
-  // }
+  public function registerNavigation() {
+    return [
+      'start' => [
+        'label' => 'Start Here',
+        'icon' => 'icon-exclamation-triangle',
+        'url' => Backend::url('managedpixels/pluginstarter/start'),
+        'permission' => ['start.*'],
+        'order' => 500
+        ]
+      ];
+  }
 
 }
