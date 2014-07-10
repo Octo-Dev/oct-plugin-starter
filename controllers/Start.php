@@ -11,6 +11,8 @@ use Backend\Classes\Controller;
 class Start extends Controller
 {
 
+  public $pageTitle="My Starter Plugin";
+
   public function __construct()
   {
     parent::__construct();
