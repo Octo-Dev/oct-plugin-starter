@@ -26,6 +26,10 @@ public function pluginDetails() {
 
 }
 
+public function boot(){
+
+}
+
 /**
  * [registerComponents description]
  */
@@ -36,6 +40,7 @@ public function registerComponents() {
   }
 
   public function registerNavigation() {
+
     return [
       'start' => [
         'label' => 'Start Here',
