@@ -1,6 +1,6 @@
 <?php
 
-namespace ManagedPixels\Pluginstarter\Controllers;
+namespace ManagedPixels\Starter\Controllers;
 
 // class imports
 use Flash;
@@ -21,9 +21,9 @@ class Start extends Controller
   public function __construct()
   {
     parent::__construct();
-    BackendMenu::setContext('ManagedPixels.Pluginstarter','start');
+    BackendMenu::setContext('ManagedPixels.Starter','start');
     //inject page assets - http://octobercms.com/docs/plugin/components#component-assets
-    $this->addCss('/plugins/managedpixels/pluginstarter/assets/css/starter-style.css');
+    $this->addCss('/plugins/managedpixels/Starter/assets/css/starter-style.css');
   }
 
  /**

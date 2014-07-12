@@ -12,7 +12,7 @@
  */
 
 
-namespace ManagedPixels\Pluginstarter ;
+namespace ManagedPixels\Starter ;
 /**
  * class imports
  */
@@ -48,7 +48,7 @@ public function boot(){
  */
 public function registerComponents() {
       return [
-        '\ManagedPixels\Pluginstarter\Components\Starter' => 'pluginStarter'
+        '\ManagedPixels\Starter\Components\Starter' => 'pluginStarter'
       ];
   }
 
@@ -65,8 +65,8 @@ public function registerComponents() {
       'start' => [
         'label' => 'Start Here',
         'icon' => 'icon-exclamation-triangle',
-        'url' => Backend::url('managedpixels/pluginstarter/start'),
-        'permission' => ['managedpixels.pluginstarter.*'],
+        'url' => Backend::url('managedpixels/starter/start'),
+        'permission' => ['managedpixels.starter.*'],
         'order' => 500
         ]
       ];
@@ -79,7 +79,7 @@ public function registerComponents() {
  */
   public function registerPermissions() {
     return [
-      'managedpixels.pluginstarter.access_start' => ['label' => 'Access Start', 'tab' => 'Start']
+      'managedpixels.starter.access_start' => ['label' => 'Access Start', 'tab' => 'Start']
     ];
   }
 

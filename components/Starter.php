@@ -10,7 +10,7 @@
  *
  */
 
-namespace ManagedPixels\PluginStarter\Components;
+namespace ManagedPixels\Starter\Components;
 
 use Cms\Classes\ComponentBase;
 
