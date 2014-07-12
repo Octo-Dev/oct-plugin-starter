@@ -16,3 +16,16 @@ nav#layout-mainmenu .menu-toggle i,
   vertical-align: middle !important;
 
 }
+
+element.style {
+}
+#layout-sidenav {
+background-color: #f1f1f1;
+
+}
+
+#layout-sidenav ul li a i {
+color: #5b5d5e;
+display: block;
+font-size: 28px;
+}
